@@ -133,6 +133,12 @@ will be the original log file with the extension replaced with a timestamp.
 You can also specify the `backupname` instead of allowing uWSGI to autogenerate
 one.
 
+The mode of the log file can be set with `mode`:
+
+.. code-block:: sh
+
+    uwsgi --socket :3031 --logger file:logfile=/tmp/uwsgi.log,mode=640
+
 Logging to sockets
 ------------------
 
